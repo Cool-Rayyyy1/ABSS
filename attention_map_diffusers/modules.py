@@ -334,6 +334,7 @@ attn_maps = {}
 
 #     return SanaPipelineOutput(images=image)
 
+
 @torch.no_grad()
 @replace_example_docstring(EXAMPLE_DOC_STRING)
 def FluxPipeline_call(
@@ -356,37 +357,73 @@ def FluxPipeline_call(
     callback_on_step_end: Optional[Callable[[int, int, Dict], None]] = None,
     callback_on_step_end_tensor_inputs: List[str] = ["latents"],
     max_sequence_length: int = 512,
-
-    # ====== 新增：统一的“只抓attention并早停”机制 ======
+    # --- Added: unified attention probe mode ---
     attention_only: bool = False,
     probe_step_idx: int = 0,
     probe_block_name: Optional[str] = None,
 ):
-    r"""
-    Function invoked when calling the pipeline for generation.
+    """
+    Run FluxPipeline generation, with an optional attention-only probe mode.
+
+    When `attention_only=True`, the function captures a single attention map (as configured
+    by the external hook logic) and stops early at `probe_step_idx` without decoding images.
+    The captured result is returned via a shared `PROBE_RESULT` dictionary.
 
     Args:
-        ...（上面你想留的 Args 都可以留）
+        attention_only:
+            If True, do not decode images. Run the denoising loop until `probe_step_idx`
+            (inclusive) and return the captured attention result.
+        probe_step_idx:
+            0-based denoising step index at which to capture attention.
+        probe_block_name:
+            Optional module name to filter which attention block to capture.
 
-    Examples:
+    Returns:
+        - If `attention_only=True`:
+            - dict if `return_dict=True`
+            - tuple(dict,) if `return_dict=False`
+        - Otherwise:
+            Standard FluxPipelineOutput or tuple(images,)
     """
 
-    # ====== 0) 每次 call 都强制 patch 回来（解决你“第一次能跑第二次炸”的典型现象）======
-    import attention_map_diffusers as amd
+    # ------------------------------------------------------------
+    # Access the probing globals without importing a hard-coded module name.
+    # This avoids leaking local package names and reduces circular-import risk.
+    # ------------------------------------------------------------
+    import sys
+
+    amd = sys.modules.get("attention_map_diffusers", None)
+    if amd is None:
+        # Fallback: create a minimal shim so the pipeline still works even if probing is not loaded.
+        class _Shim:
+            PROBE_RESULT = {}
+            CAPTURE_ENABLED = False
+            CAPTURE_STEP_IDX = None
+            CAPTURE_BLOCK_NAME = None
+            CURRENT_STEP_IDX = -1
+
+            @staticmethod
+            def replace_call_method_for_flux(x):
+                return x
+
+        amd = _Shim()
+
+    # Ensure transformer forward is patched (matches your original intent).
+    # If replace_call_method_for_flux is idempotent, this is safe.
     self.transformer = amd.replace_call_method_for_flux(self.transformer)
 
-    # ====== 0.1) 统一的 probe 开关（只用这一套，不再靠 score_steps 缩短步数）======
+    # Configure global probe switches for this call.
     amd.PROBE_RESULT = {}
     if attention_only:
         amd.CAPTURE_ENABLED = True
         amd.CAPTURE_STEP_IDX = int(probe_step_idx)
-        amd.CAPTURE_BLOCK_NAME = probe_block_name  # 例如 "transformer_blocks.9.attn"
+        amd.CAPTURE_BLOCK_NAME = probe_block_name
     else:
         amd.CAPTURE_ENABLED = False
         amd.CAPTURE_STEP_IDX = None
         amd.CAPTURE_BLOCK_NAME = None
 
-    # ====== 原逻辑：确保 height/width 一定不是 None（否则你就会遇到 None // int）======
+    # Ensure height/width are defined
     height = height or self.default_sample_size * self.vae_scale_factor
     width = width or self.default_sample_size * self.vae_scale_factor
 
@@ -419,11 +456,8 @@ def FluxPipeline_call(
     lora_scale = (
         self._joint_attention_kwargs.get("scale", None) if self._joint_attention_kwargs is not None else None
     )
-    (
-        prompt_embeds,
-        pooled_prompt_embeds,
-        text_ids,
-    ) = self.encode_prompt(
+
+    prompt_embeds, pooled_prompt_embeds, text_ids = self.encode_prompt(
         prompt=prompt,
         prompt_2=prompt_2,
         prompt_embeds=prompt_embeds,
@@ -468,13 +502,13 @@ def FluxPipeline_call(
     num_warmup_steps = max(len(timesteps) - num_inference_steps * self.scheduler.order, 0)
     self._num_timesteps = len(timesteps)
 
-    # 把 scheduler buffer 搬到 CPU
+    # Optional: keep scheduler buffers on CPU to reduce GPU memory usage
     if hasattr(self.scheduler, "sigmas") and isinstance(self.scheduler.sigmas, torch.Tensor):
         self.scheduler.sigmas = self.scheduler.sigmas.to("cpu")
     if hasattr(self.scheduler, "timesteps") and isinstance(self.scheduler.timesteps, torch.Tensor):
         self.scheduler.timesteps = self.scheduler.timesteps.to("cpu")
 
-    # handle guidance
+    # Handle guidance
     if self.transformer.config.guidance_embeds:
         guidance = torch.full([1], guidance_scale, device=device, dtype=torch.float32)
         guidance = guidance.expand(latents.shape[0])
@@ -482,24 +516,20 @@ def FluxPipeline_call(
         guidance = None
 
     # 6. Denoising loop
+    probe_step_idx_int = int(probe_step_idx)
+
     with self.progress_bar(total=num_inference_steps) as progress_bar:
         for i, t in enumerate(timesteps):
             if self.interrupt:
                 continue
 
-            # ✅ 让 hook 知道当前第几步
+            # Expose the current step index to the attention hook.
             amd.CURRENT_STEP_IDX = i
 
-            # 6.1 transformer timestep on CUDA
+            # Transformer timestep on the latent device
             timestep_cuda = t.to(latents.device)
             timestep_cuda = timestep_cuda.expand(latents.shape[0]).to(latents.dtype)
 
-            print(
-                f"[FluxPipeline] step {i}/{num_inference_steps}, "
-                f"t={float(t):.3f}, latents={tuple(latents.shape)}, device={latents.device}"
-            )
-
-            # ✅ 关键：一定要把 height/width 传给 transformer.forward（否则你会 height=None 爆炸）
             noise_pred = self.transformer(
                 hidden_states=latents,
                 timestep=timestep_cuda / 1000,
@@ -514,12 +544,11 @@ def FluxPipeline_call(
                 width=int(width),
             )[0]
 
-            # ====== 统一早停：只用 attention_only 这一套 ======
-            if attention_only and i >= probe_step_idx:
-                # hook 在这一轮 forward 里已经把 amd.PROBE_RESULT 写好了（如果 block/step 对上）
+            # Early stop for probe mode: the hook should have populated PROBE_RESULT if matched.
+            if attention_only and i >= probe_step_idx_int:
                 break
 
-            # 6.2 scheduler step on CPU
+            # Scheduler step on CPU (as in your original logic)
             latents_dtype = latents.dtype
             latents_device = latents.device
 
@@ -527,17 +556,12 @@ def FluxPipeline_call(
             latents_cpu = latents.to("cpu")
             t_cpu = t.to("cpu")
 
-            latents_cpu = self.scheduler.step(
-                noise_pred_cpu, t_cpu, latents_cpu, return_dict=False
-            )[0]
-
+            latents_cpu = self.scheduler.step(noise_pred_cpu, t_cpu, latents_cpu, return_dict=False)[0]
             latents = latents_cpu.to(latents_device, dtype=latents_dtype)
 
-            # callback
+            # Callback
             if callback_on_step_end is not None:
-                callback_kwargs = {}
-                for k in callback_on_step_end_tensor_inputs:
-                    callback_kwargs[k] = locals()[k]
+                callback_kwargs = {k: locals()[k] for k in callback_on_step_end_tensor_inputs}
                 callback_outputs = callback_on_step_end(self, i, t, callback_kwargs)
 
                 latents = callback_outputs.pop("latents", latents)
@@ -549,14 +573,15 @@ def FluxPipeline_call(
             if XLA_AVAILABLE:
                 xm.mark_step()
 
-    # ====== attention_only：直接返回抓到的 attention 结果，不做 decode ======
+    # Probe-only return: do not decode
     if attention_only:
         amd.CAPTURE_ENABLED = False
+        result = getattr(amd, "PROBE_RESULT", {}) or {}
         if return_dict:
-            return getattr(amd, "PROBE_RESULT", {})
-        return (getattr(amd, "PROBE_RESULT", {}),)
+            return result
+        return (result,)
 
-    # 7. decode（原逻辑不动）
+    # 7. Decode (standard pipeline behavior)
     if output_type == "latent":
         image = latents
     else:
@@ -571,6 +596,7 @@ def FluxPipeline_call(
         return (image,)
 
     return FluxPipelineOutput(images=image)
+
 
 
 
