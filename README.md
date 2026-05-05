@@ -35,7 +35,7 @@ python scripts/export_abss_data.py
 | `--prompts-json` | `prompts_initno.json` | Prompt id → text. |
 | `--token-json` | `initno_core_token_index_dict.json` | Per-prompt word positions (e.g. `entity`) for scoring. |
 | `--start-idx` / `--end-idx` | (required) | Inclusive prompt id range. |
-| `--base-seed` | `11` | Fixes the global seed pool and random top-K picks. |
+| `--base-seed` | `42` | Fixes the global seed pool and random top-K picks. |
 | `--seeds-per-prompt` | `50` | How many seeds to score per prompt. |
 | `--top-k` | `1` | Keep this many best seeds for `topK_attn`. |
 | `--gen-steps` | `50` | Denoising steps when saving images. |
