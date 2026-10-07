@@ -1,0 +1,4830 @@
+{
+  "1": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "2": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "3": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "4": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "5": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "6": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "7": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "8": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "9": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "10": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "11": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "12": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "13": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "14": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "15": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "16": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "17": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "18": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "19": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "20": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "21": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "22": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "23": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "24": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "25": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "26": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "27": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "28": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "29": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "30": {
+    "adjective": [
+      1
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      4
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "31": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      4
+    ],
+    "other": [],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1
+    ]
+  },
+  "32": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "33": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "34": {
+    "adjective": [
+      1
+    ],
+    "verb": [
+      2
+    ],
+    "entity": [
+      3
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "35": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "36": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "37": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "38": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "39": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "40": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "41": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "42": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "43": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "44": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "45": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1
+    ]
+  },
+  "46": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5,
+      9
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "47": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "48": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "49": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "50": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "51": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "52": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "53": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "54": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "55": {
+    "adjective": [
+      2,
+      3,
+      7
+    ],
+    "verb": [],
+    "entity": [
+      4,
+      5,
+      8,
+      9
+    ],
+    "other": [
+      10,
+      11,
+      13
+    ],
+    "non-entity": [
+      12,
+      15
+    ],
+    "article": [
+      1,
+      6,
+      10,
+      14
+    ]
+  },
+  "56": {
+    "adjective": [
+      2,
+      3,
+      7
+    ],
+    "verb": [],
+    "entity": [
+      4,
+      5,
+      8,
+      9
+    ],
+    "other": [
+      10,
+      11,
+      13
+    ],
+    "non-entity": [
+      12,
+      15
+    ],
+    "article": [
+      1,
+      6,
+      10,
+      14
+    ]
+  },
+  "57": {
+    "adjective": [
+      2,
+      3,
+      7
+    ],
+    "verb": [],
+    "entity": [
+      4,
+      5,
+      8,
+      9
+    ],
+    "other": [
+      10,
+      11,
+      13
+    ],
+    "non-entity": [
+      12,
+      15
+    ],
+    "article": [
+      1,
+      6,
+      10,
+      14
+    ]
+  },
+  "58": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      7
+    ],
+    "other": [
+      4,
+      8,
+      9,
+      11
+    ],
+    "non-entity": [
+      5,
+      12,
+      10
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "59": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      4,
+      9,
+      10,
+      12
+    ],
+    "non-entity": [
+      5,
+      6,
+      11,
+      13,
+      14
+    ],
+    "article": [
+      1,
+      7
+    ]
+  },
+  "60": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      7
+    ],
+    "other": [
+      4,
+      8,
+      9,
+      11
+    ],
+    "non-entity": [
+      5,
+      12,
+      10
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "61": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      4,
+      9
+    ],
+    "other": [
+      5,
+      7
+    ],
+    "non-entity": [
+      2,
+      6
+    ],
+    "article": [
+      1,
+      8
+    ]
+  },
+  "62": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      5
+    ],
+    "entity": [
+      3,
+      8
+    ],
+    "other": [
+      4,
+      6
+    ],
+    "non-entity": [
+      2
+    ],
+    "article": [
+      1,
+      7
+    ]
+  },
+  "63": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      6
+    ],
+    "entity": [
+      4,
+      9
+    ],
+    "other": [
+      3,
+      5,
+      7
+    ],
+    "non-entity": [
+      2
+    ],
+    "article": [
+      1,
+      8
+    ]
+  },
+  "64": {
+    "adjective": [
+      5,
+      6,
+      11,
+      12
+    ],
+    "verb": [
+      8
+    ],
+    "entity": [
+      7,
+      13
+    ],
+    "other": [
+      3,
+      9,
+      11
+    ],
+    "non-entity": [
+      2
+    ],
+    "article": [
+      1,
+      4,
+      10
+    ]
+  },
+  "65": {
+    "adjective": [
+      5,
+      6,
+      11,
+      12
+    ],
+    "verb": [
+      8
+    ],
+    "entity": [
+      7,
+      13
+    ],
+    "other": [
+      3,
+      9,
+      11
+    ],
+    "non-entity": [
+      2
+    ],
+    "article": [
+      1,
+      4,
+      10
+    ]
+  },
+  "66": {
+    "adjective": [
+      2,
+      3,
+      8,
+      9
+    ],
+    "verb": [
+      5
+    ],
+    "entity": [
+      4,
+      10
+    ],
+    "other": [
+      6
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      7
+    ]
+  },
+  "67": {
+    "adjective": [
+      7,
+      16,
+      19,
+      28,
+      31
+    ],
+    "verb": [
+      9,
+      13,
+      21,
+      25,
+      33
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      3,
+      4,
+      10,
+      14,
+      22,
+      26,
+      34
+    ],
+    "non-entity": [
+      2,
+      12,
+      24,
+      36,
+      8,
+      17,
+      20,
+      29,
+      32
+    ],
+    "article": [
+      1,
+      6,
+      11,
+      15,
+      18,
+      23,
+      27,
+      30,
+      35
+    ]
+  },
+  "68": {
+    "adjective": [
+      7,
+      16,
+      19,
+      28,
+      31
+    ],
+    "verb": [
+      9,
+      13,
+      21,
+      25,
+      33
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      3,
+      4,
+      10,
+      14,
+      22,
+      26,
+      34
+    ],
+    "non-entity": [
+      2,
+      12,
+      24,
+      36,
+      8,
+      17,
+      20,
+      29,
+      32
+    ],
+    "article": [
+      1,
+      6,
+      11,
+      15,
+      18,
+      23,
+      27,
+      30,
+      35
+    ]
+  },
+  "69": {
+    "adjective": [
+      7,
+      16,
+      19,
+      28,
+      31
+    ],
+    "verb": [
+      9,
+      13,
+      21,
+      25,
+      33
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      3,
+      4,
+      10,
+      14,
+      22,
+      26,
+      34
+    ],
+    "non-entity": [
+      2,
+      12,
+      24,
+      36,
+      8,
+      17,
+      20,
+      29,
+      32
+    ],
+    "article": [
+      1,
+      6,
+      11,
+      15,
+      18,
+      23,
+      27,
+      30,
+      35
+    ]
+  },
+  "70": {
+    "adjective": [
+      9,
+      11,
+      13,
+      16
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      6
+    ],
+    "other": [
+      3,
+      15
+    ],
+    "non-entity": [
+      2,
+      5,
+      10,
+      12,
+      14,
+      17
+    ],
+    "article": [
+      1,
+      4,
+      8
+    ]
+  },
+  "71": {
+    "adjective": [
+      9,
+      11,
+      13,
+      16
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      6
+    ],
+    "other": [
+      3,
+      15
+    ],
+    "non-entity": [
+      2,
+      5,
+      10,
+      12,
+      14,
+      17
+    ],
+    "article": [
+      1,
+      4,
+      8
+    ]
+  },
+  "72": {
+    "adjective": [],
+    "verb": [
+      8
+    ],
+    "entity": [
+      7,
+      11
+    ],
+    "other": [
+      5,
+      9
+    ],
+    "non-entity": [
+      2,
+      3,
+      4
+    ],
+    "article": [
+      1,
+      6,
+      10
+    ]
+  },
+  "73": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      6,
+      10
+    ],
+    "other": [
+      4,
+      8
+    ],
+    "non-entity": [
+      3
+    ],
+    "article": [
+      1,
+      5,
+      9
+    ]
+  },
+  "74": {
+    "adjective": [
+      2
+    ],
+    "verb": [],
+    "entity": [
+      6
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [
+      3
+    ],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "75": {
+    "adjective": [
+      25
+    ],
+    "verb": [
+      3,
+      7,
+      15,
+      19,
+      22
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      4,
+      5,
+      8,
+      11,
+      12,
+      14,
+      16,
+      18,
+      20,
+      23
+    ],
+    "non-entity": [
+      6,
+      10,
+      17,
+      21,
+      26
+    ],
+    "article": [
+      1,
+      9,
+      13,
+      24
+    ]
+  },
+  "76": {
+    "adjective": [
+      2,
+      16
+    ],
+    "verb": [
+      5,
+      11
+    ],
+    "entity": [
+      3,
+      4
+    ],
+    "other": [
+      7,
+      9,
+      10,
+      14,
+      18,
+      19
+    ],
+    "non-entity": [
+      6,
+      8,
+      13,
+      17,
+      21
+    ],
+    "article": [
+      1,
+      12,
+      15,
+      20
+    ]
+  },
+  "77": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      4
+    ],
+    "entity": [
+      3
+    ],
+    "other": [
+      5,
+      7,
+      10
+    ],
+    "non-entity": [
+      6,
+      8,
+      9,
+      12
+    ],
+    "article": [
+      1,
+      11
+    ]
+  },
+  "78": {
+    "adjective": [],
+    "verb": [
+      8
+    ],
+    "entity": [
+      2,
+      3
+    ],
+    "other": [
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "non-entity": [
+      6,
+      11,
+      12
+    ],
+    "article": [
+      1,
+      10
+    ]
+  },
+  "79": {
+    "adjective": [
+      6,
+      28
+    ],
+    "verb": [
+      15,
+      21,
+      23
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      4,
+      8,
+      11,
+      12,
+      17,
+      18,
+      19,
+      22,
+      26,
+      30
+    ],
+    "non-entity": [
+      14,
+      25,
+      7,
+      10,
+      16,
+      29,
+      31
+    ],
+    "article": [
+      1,
+      5,
+      9,
+      13,
+      24,
+      27
+    ]
+  },
+  "80": {
+    "adjective": [
+      6,
+      12,
+      13,
+      18
+    ],
+    "verb": [
+      3,
+      15,
+      20
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      4,
+      8,
+      10,
+      16,
+      21,
+      23,
+      25,
+      26
+    ],
+    "non-entity": [
+      7,
+      9,
+      14,
+      19,
+      22,
+      24,
+      27
+    ],
+    "article": [
+      1,
+      5,
+      11,
+      17
+    ]
+  },
+  "81": {
+    "adjective": [
+      2
+    ],
+    "verb": [],
+    "entity": [
+      3
+    ],
+    "other": [
+      4,
+      5,
+      7,
+      8,
+      11,
+      12
+    ],
+    "non-entity": [
+      6,
+      10,
+      13
+    ],
+    "article": [
+      1,
+      9
+    ]
+  },
+  "82": {
+    "adjective": [
+      9
+    ],
+    "verb": [
+      8,
+      11,
+      13
+    ],
+    "entity": [
+      2,
+      4
+    ],
+    "other": [
+      3,
+      5,
+      6,
+      7,
+      10,
+      12,
+      15
+    ],
+    "non-entity": [
+      14,
+      16
+    ],
+    "article": [
+      1
+    ]
+  },
+  "83": {
+    "adjective": [
+      2,
+      4
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      8
+    ],
+    "article": [
+      1
+    ]
+  },
+  "84": {
+    "adjective": [
+      9,
+      10
+    ],
+    "verb": [
+      3,
+      5,
+      12,
+      16,
+      24,
+      31,
+      35,
+      37,
+      43
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      4,
+      8,
+      13,
+      14,
+      17,
+      18,
+      20,
+      23,
+      28,
+      29,
+      30,
+      33,
+      36,
+      38,
+      41,
+      44,
+      46,
+      49,
+      50
+    ],
+    "non-entity": [
+      6,
+      7,
+      11,
+      15,
+      40,
+      42,
+      45,
+      48,
+      51,
+      19,
+      27,
+      34
+    ],
+    "article": [
+      1,
+      21,
+      26,
+      39,
+      47
+    ]
+  },
+  "85": {
+    "adjective": [
+      2,
+      3,
+      4,
+      7,
+      11
+    ],
+    "verb": [
+      15,
+      17,
+      18,
+      21,
+      23
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      6,
+      9,
+      13,
+      16,
+      19,
+      20,
+      22
+    ],
+    "non-entity": [
+      8,
+      12,
+      14,
+      24
+    ],
+    "article": [
+      1,
+      10
+    ]
+  },
+  "86": {
+    "adjective": [
+      2,
+      3,
+      11,
+      12,
+      15,
+      18
+    ],
+    "verb": [
+      6,
+      10
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      5,
+      7,
+      9,
+      14,
+      17
+    ],
+    "non-entity": [
+      8,
+      13,
+      16
+    ],
+    "article": [
+      1
+    ]
+  },
+  "87": {
+    "adjective": [
+      2,
+      3,
+      4,
+      7,
+      10,
+      13,
+      27
+    ],
+    "verb": [
+      18,
+      24,
+      31
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      6,
+      9,
+      12,
+      15,
+      16,
+      17,
+      19,
+      22,
+      23,
+      26,
+      29,
+      30
+    ],
+    "non-entity": [
+      8,
+      11,
+      14,
+      21,
+      25,
+      28
+    ],
+    "article": [
+      1,
+      9,
+      20
+    ]
+  },
+  "88": {
+    "adjective": [
+      2,
+      3,
+      9,
+      12,
+      16,
+      20,
+      21,
+      23
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      5,
+      6,
+      14,
+      18,
+      22
+    ],
+    "non-entity": [
+      10,
+      13,
+      15,
+      17,
+      24
+    ],
+    "article": [
+      1,
+      8,
+      11,
+      19
+    ]
+  },
+  "89": {
+    "adjective": [
+      4,
+      5,
+      16,
+      21,
+      23
+    ],
+    "verb": [
+      7,
+      13
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      8,
+      11,
+      14,
+      18,
+      20,
+      22
+    ],
+    "non-entity": [
+      6,
+      10,
+      12,
+      17,
+      19,
+      24
+    ],
+    "article": [
+      1,
+      9,
+      15
+    ]
+  },
+  "90": {
+    "adjective": [
+      2,
+      3,
+      4,
+      9,
+      13,
+      15,
+      17,
+      19,
+      23
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      6,
+      8,
+      22
+    ],
+    "non-entity": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      21,
+      24
+    ],
+    "article": [
+      1
+    ]
+  },
+  "91": {
+    "adjective": [
+      2,
+      3,
+      4,
+      8,
+      14
+    ],
+    "verb": [
+      10,
+      18,
+      25,
+      30,
+      37,
+      41
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      6,
+      13,
+      16,
+      17,
+      19,
+      21,
+      24,
+      29,
+      31,
+      33,
+      38,
+      39,
+      40,
+      42,
+      44,
+      46,
+      47,
+      48
+    ],
+    "non-entity": [
+      9,
+      12,
+      15,
+      20,
+      23,
+      27,
+      28,
+      32,
+      35,
+      43,
+      45,
+      50
+    ],
+    "article": [
+      1,
+      7,
+      11,
+      22,
+      26,
+      34
+    ]
+  },
+  "92": {
+    "adjective": [
+      4,
+      15,
+      23,
+      26,
+      34
+    ],
+    "verb": [
+      13,
+      20,
+      30
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      3,
+      6,
+      7,
+      10,
+      12,
+      14,
+      17,
+      19,
+      21,
+      25,
+      28,
+      29,
+      31,
+      32
+    ],
+    "non-entity": [
+      2,
+      9,
+      11,
+      16,
+      18,
+      24,
+      27,
+      35
+    ],
+    "article": [
+      1,
+      8,
+      22,
+      33
+    ]
+  },
+  "93": {
+    "adjective": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      11
+    ],
+    "verb": [],
+    "entity": [
+      6
+    ],
+    "other": [
+      7,
+      10
+    ],
+    "non-entity": [
+      9,
+      12
+    ],
+    "article": [
+      1
+    ]
+  },
+  "94": {
+    "adjective": [
+      8,
+      11,
+      12
+    ],
+    "verb": [
+      3,
+      10
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      7,
+      9,
+      14,
+      16
+    ],
+    "non-entity": [
+      6,
+      13,
+      15
+    ],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "95": {
+    "adjective": [
+      4,
+      8
+    ],
+    "verb": [
+      1
+    ],
+    "entity": [
+      5,
+      9
+    ],
+    "other": [
+      2,
+      6
+    ],
+    "non-entity": [],
+    "article": [
+      3,
+      7
+    ]
+  },
+  "96": {
+    "adjective": [
+      2,
+      8,
+      9,
+      17
+    ],
+    "verb": [
+      11,
+      13,
+      14
+    ],
+    "entity": [
+      6
+    ],
+    "other": [
+      4,
+      7,
+      15,
+      19,
+      20
+    ],
+    "non-entity": [
+      3,
+      10,
+      12,
+      18,
+      21
+    ],
+    "article": [
+      1,
+      5,
+      16
+    ]
+  },
+  "97": {
+    "adjective": [
+      2,
+      3,
+      6,
+      14,
+      21,
+      22
+    ],
+    "verb": [
+      5
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      8,
+      10,
+      16,
+      20,
+      24
+    ],
+    "non-entity": [
+      7,
+      9,
+      12,
+      13,
+      15,
+      18,
+      19,
+      23,
+      26,
+      27
+    ],
+    "article": [
+      1,
+      11,
+      17,
+      25
+    ]
+  },
+  "98": {
+    "adjective": [
+      2,
+      17
+    ],
+    "verb": [
+      11
+    ],
+    "entity": [
+      10,
+      18
+    ],
+    "other": [
+      1,
+      4,
+      6,
+      12,
+      15
+    ],
+    "non-entity": [
+      3,
+      5,
+      7,
+      8,
+      14
+    ],
+    "article": [
+      9,
+      13,
+      16
+    ]
+  },
+  "99": {
+    "adjective": [
+      17
+    ],
+    "verb": [
+      3,
+      9
+    ],
+    "entity": [
+      2,
+      6
+    ],
+    "other": [
+      4,
+      7,
+      8,
+      12,
+      13,
+      15,
+      19,
+      21
+    ],
+    "non-entity": [
+      11,
+      14,
+      18
+    ],
+    "article": [
+      1,
+      5,
+      10,
+      16,
+      20
+    ]
+  },
+  "100": {
+    "adjective": [
+      13
+    ],
+    "verb": [
+      5,
+      19,
+      26
+    ],
+    "entity": [
+      2,
+      10
+    ],
+    "other": [
+      6,
+      8,
+      11,
+      15,
+      16,
+      20,
+      27
+    ],
+    "non-entity": [
+      7,
+      14,
+      18,
+      22,
+      24,
+      28
+    ],
+    "article": [
+      1,
+      9,
+      12,
+      17,
+      21,
+      23
+    ]
+  },
+  "101": {
+    "adjective": [],
+    "verb": [
+      3,
+      7
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      4,
+      5,
+      8
+    ],
+    "non-entity": [
+      6,
+      10
+    ],
+    "article": [
+      1,
+      9
+    ]
+  },
+  "102": {
+    "adjective": [],
+    "verb": [
+      7,
+      13,
+      21,
+      28,
+      36
+    ],
+    "entity": [
+      2,
+      5,
+      35
+    ],
+    "other": [
+      3,
+      8,
+      16,
+      17,
+      23,
+      31,
+      32,
+      38
+    ],
+    "non-entity": [
+      9,
+      11,
+      14,
+      18,
+      20,
+      22,
+      24,
+      25,
+      27,
+      29,
+      30,
+      33,
+      40
+    ],
+    "article": [
+      1,
+      4,
+      6,
+      10,
+      12,
+      15,
+      19,
+      26,
+      34,
+      37,
+      39
+    ]
+  },
+  "103": {
+    "adjective": [
+      1,
+      2
+    ],
+    "verb": [
+      4,
+      13,
+      18
+    ],
+    "entity": [
+      3,
+      10
+    ],
+    "other": [
+      6,
+      8,
+      14,
+      19
+    ],
+    "non-entity": [
+      5,
+      7,
+      9,
+      11,
+      12,
+      15,
+      16,
+      17,
+      20,
+      21
+    ],
+    "article": [
+      5,
+      9,
+      11,
+      16
+    ]
+  },
+  "104": {
+    "adjective": [
+      13
+    ],
+    "verb": [
+      3,
+      9,
+      15,
+      16
+    ],
+    "entity": [
+      1,
+      2,
+      7,
+      8
+    ],
+    "other": [
+      4,
+      6
+    ],
+    "non-entity": [
+      5,
+      10,
+      11,
+      12,
+      14,
+      17
+    ],
+    "article": []
+  },
+  "105": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1,
+      2
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "106": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1,
+      2
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "107": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "108": {
+    "adjective": [
+      1
+    ],
+    "verb": [],
+    "entity": [
+      2
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "109": {
+    "adjective": [
+      1
+    ],
+    "verb": [],
+    "entity": [
+      2
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "110": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      4
+    ],
+    "entity": [
+      3
+    ],
+    "other": [
+      5,
+      7,
+      10
+    ],
+    "non-entity": [
+      6,
+      8,
+      9,
+      11,
+      12
+    ],
+    "article": [
+      1
+    ]
+  },
+  "111": {
+    "adjective": [
+      2,
+      3,
+      4,
+      7,
+      8,
+      10,
+      13
+    ],
+    "verb": [
+      18,
+      24,
+      30
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      6,
+      9,
+      15,
+      17,
+      19,
+      22,
+      23,
+      26,
+      27
+    ],
+    "non-entity": [
+      11,
+      12,
+      14,
+      16,
+      20,
+      21,
+      25,
+      28,
+      29,
+      31
+    ],
+    "article": [
+      1,
+      6,
+      21
+    ]
+  },
+  "112": {
+    "adjective": [
+      10
+    ],
+    "verb": [
+      3,
+      5,
+      12,
+      16,
+      24,
+      31,
+      37,
+      42
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      4,
+      8,
+      9,
+      13,
+      14,
+      17,
+      18,
+      20,
+      23,
+      25,
+      28,
+      29,
+      32,
+      33,
+      34,
+      36,
+      38,
+      40,
+      43,
+      46,
+      48,
+      49
+    ],
+    "non-entity": [
+      6,
+      7,
+      11,
+      15,
+      19,
+      21,
+      22,
+      26,
+      27,
+      30,
+      35,
+      39,
+      41,
+      44,
+      45,
+      47,
+      50
+    ],
+    "article": [
+      1,
+      21
+    ]
+  },
+  "113": {
+    "adjective": [
+      2,
+      3,
+      9,
+      12,
+      16,
+      19,
+      20,
+      22
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      5,
+      6,
+      14,
+      18,
+      21
+    ],
+    "non-entity": [
+      10,
+      11,
+      13,
+      15,
+      17,
+      23
+    ],
+    "article": [
+      1,
+      8,
+      11
+    ]
+  },
+  "114": {
+    "adjective": [
+      2,
+      3,
+      4,
+      8,
+      14
+    ],
+    "verb": [
+      10,
+      18,
+      25,
+      37,
+      41
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      6,
+      13,
+      16,
+      17,
+      19,
+      21,
+      22,
+      24,
+      26,
+      29,
+      31,
+      34,
+      36,
+      38,
+      39,
+      40,
+      42,
+      44,
+      46,
+      47,
+      48,
+      49
+    ],
+    "non-entity": [
+      9,
+      11,
+      12,
+      15,
+      20,
+      23,
+      27,
+      28,
+      30,
+      32,
+      33,
+      35,
+      43,
+      45,
+      50
+    ],
+    "article": [
+      1,
+      7,
+      22,
+      34
+    ]
+  },
+  "115": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      7
+    ],
+    "other": [
+      3,
+      5
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "116": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      3,
+      8
+    ],
+    "other": [
+      4,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      7
+    ]
+  },
+  "117": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      7
+    ],
+    "other": [
+      3,
+      5
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "118": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      7
+    ],
+    "other": [
+      3,
+      5
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "119": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      7,
+      8
+    ],
+    "other": [
+      3,
+      5
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "120": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "121": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "122": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      3,
+      6
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "123": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "other": [
+      4
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "124": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      5
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "125": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "126": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "127": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "128": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "129": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "130": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "131": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8,
+      9
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "132": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      3,
+      9
+    ],
+    "other": [
+      4,
+      7
+    ],
+    "non-entity": [
+      6
+    ],
+    "article": [
+      1,
+      5,
+      8
+    ]
+  },
+  "133": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8,
+      9
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "134": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      2,
+      8,
+      9
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1,
+      4,
+      7
+    ]
+  },
+  "135": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "136": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "137": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "138": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "139": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "140": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "141": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      1
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "142": {
+    "adjective": [
+      4,
+      5,
+      11
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      10
+    ],
+    "non-entity": [
+      6,
+      9,
+      12
+    ],
+    "article": [
+      1,
+      8
+    ]
+  },
+  "143": {
+    "adjective": [
+      4,
+      21,
+      26
+    ],
+    "verb": [
+      18,
+      19,
+      24
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      2,
+      3,
+      10,
+      13,
+      16,
+      23
+    ],
+    "non-entity": [
+      1,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      14,
+      15,
+      17,
+      22,
+      27,
+      28
+    ],
+    "article": [
+      20
+    ]
+  },
+  "144": {
+    "adjective": [
+      2,
+      8,
+      9,
+      10,
+      13
+    ],
+    "verb": [
+      4
+    ],
+    "entity": [
+      3,
+      7
+    ],
+    "other": [
+      5
+    ],
+    "non-entity": [
+      11,
+      12,
+      14
+    ],
+    "article": [
+      1,
+      6
+    ]
+  },
+  "145": {
+    "adjective": [
+      5,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      7
+    ],
+    "other": [
+      3,
+      8
+    ],
+    "non-entity": [
+      2,
+      9,
+      10
+    ],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "146": {
+    "adjective": [
+      2,
+      3
+    ],
+    "verb": [
+      5,
+      14
+    ],
+    "entity": [
+      4,
+      7
+    ],
+    "other": [
+      8,
+      9,
+      13,
+      15
+    ],
+    "non-entity": [
+      10,
+      17
+    ],
+    "article": [
+      1,
+      6,
+      16
+    ]
+  },
+  "147": {
+    "adjective": [
+      2,
+      3,
+      7,
+      15,
+      18,
+      19
+    ],
+    "verb": [
+      9,
+      11,
+      22
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      5,
+      10,
+      12,
+      23
+    ],
+    "non-entity": [
+      8,
+      14,
+      20,
+      21,
+      25
+    ],
+    "article": [
+      1,
+      6,
+      13
+    ]
+  },
+  "148": {
+    "adjective": [
+      5,
+      9,
+      10,
+      15,
+      16,
+      17,
+      19
+    ],
+    "verb": [
+      12
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      7
+    ],
+    "non-entity": [
+      6,
+      11,
+      18,
+      20
+    ],
+    "article": [
+      1,
+      4,
+      8,
+      13
+    ]
+  },
+  "149": {
+    "adjective": [
+      2,
+      3
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      4,
+      6
+    ],
+    "other": [
+      5,
+      8
+    ],
+    "non-entity": [
+      9
+    ],
+    "article": [
+      1
+    ]
+  },
+  "150": {
+    "adjective": [
+      1
+    ],
+    "verb": [],
+    "entity": [
+      2,
+      3
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "151": {
+    "adjective": [
+      2,
+      4
+    ],
+    "verb": [
+      6
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      3,
+      7
+    ],
+    "non-entity": [
+      9
+    ],
+    "article": [
+      1,
+      8
+    ]
+  },
+  "152": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      8
+    ],
+    "entity": [
+      3,
+      6
+    ],
+    "other": [
+      4,
+      7
+    ],
+    "non-entity": [],
+    "article": [
+      1,
+      5
+    ]
+  },
+  "153": {
+    "adjective": [
+      2,
+      10,
+      17,
+      21,
+      24
+    ],
+    "verb": [
+      4,
+      6,
+      12,
+      13,
+      14,
+      30
+    ],
+    "entity": [
+      3,
+      18
+    ],
+    "other": [
+      5,
+      8,
+      15,
+      19,
+      23,
+      26,
+      27,
+      28,
+      29,
+      31,
+      34,
+      36
+    ],
+    "non-entity": [
+      7,
+      11,
+      20,
+      22,
+      25,
+      33,
+      35
+    ],
+    "article": [
+      1,
+      9,
+      16,
+      32
+    ]
+  },
+  "154": {
+    "adjective": [
+      3,
+      9
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      6,
+      10
+    ],
+    "other": [
+      1,
+      2
+    ],
+    "non-entity": [
+      4,
+      11,
+      12
+    ],
+    "article": [
+      5,
+      8
+    ]
+  },
+  "155": {
+    "adjective": [
+      1
+    ],
+    "verb": [],
+    "entity": [
+      2
+    ],
+    "other": [],
+    "non-entity": [],
+    "article": []
+  },
+  "156": {
+    "adjective": [
+      4,
+      8
+    ],
+    "verb": [
+      6
+    ],
+    "entity": [
+      5
+    ],
+    "other": [
+      2,
+      7,
+      10,
+      14
+    ],
+    "non-entity": [
+      1,
+      9,
+      11,
+      12,
+      13,
+      15
+    ],
+    "article": [
+      3,
+      11
+    ]
+  },
+  "157": {
+    "adjective": [
+      1
+    ],
+    "verb": [
+      6
+    ],
+    "entity": [
+      5,
+      9
+    ],
+    "other": [
+      3,
+      7
+    ],
+    "non-entity": [
+      2
+    ],
+    "article": [
+      4,
+      8
+    ]
+  },
+  "158": {
+    "adjective": [
+      2,
+      6
+    ],
+    "verb": [
+      12
+    ],
+    "entity": [
+      7
+    ],
+    "other": [
+      9,
+      13
+    ],
+    "non-entity": [
+      3,
+      4,
+      11,
+      15,
+      16
+    ],
+    "article": [
+      1,
+      5,
+      10,
+      14
+    ]
+  },
+  "159": {
+    "adjective": [],
+    "verb": [
+      5
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      2,
+      6
+    ],
+    "non-entity": [
+      1,
+      8,
+      9
+    ],
+    "article": [
+      3,
+      7
+    ]
+  },
+  "160": {
+    "adjective": [
+      10,
+      11
+    ],
+    "verb": [],
+    "entity": [
+      2,
+      9
+    ],
+    "other": [
+      3,
+      6
+    ],
+    "non-entity": [
+      4,
+      5,
+      7,
+      8,
+      12
+    ],
+    "article": [
+      1,
+      7
+    ]
+  },
+  "161": {
+    "adjective": [
+      2,
+      7
+    ],
+    "verb": [
+      10
+    ],
+    "entity": [
+      8,
+      9
+    ],
+    "other": [
+      4,
+      5,
+      11
+    ],
+    "non-entity": [
+      3,
+      13
+    ],
+    "article": [
+      1,
+      6,
+      12
+    ]
+  },
+  "162": {
+    "adjective": [],
+    "verb": [
+      3,
+      8,
+      15
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      4,
+      6,
+      10,
+      12,
+      14
+    ],
+    "non-entity": [
+      5,
+      7,
+      11,
+      13
+    ],
+    "article": [
+      1
+    ]
+  },
+  "163": {
+    "adjective": [],
+    "verb": [
+      8
+    ],
+    "entity": [
+      3,
+      4
+    ],
+    "other": [
+      2,
+      5,
+      9,
+      10,
+      11
+    ],
+    "non-entity": [
+      1,
+      6,
+      7,
+      12,
+      13
+    ],
+    "article": [
+      6
+    ]
+  },
+  "164": {
+    "adjective": [
+      1,
+      5,
+      6
+    ],
+    "verb": [],
+    "entity": [
+      7
+    ],
+    "other": [
+      3,
+      8
+    ],
+    "non-entity": [
+      2,
+      4,
+      9,
+      10
+    ],
+    "article": [
+      4
+    ]
+  },
+  "165": {
+    "adjective": [
+      5,
+      9
+    ],
+    "verb": [
+      8
+    ],
+    "entity": [
+      6
+    ],
+    "other": [
+      3,
+      7,
+      11
+    ],
+    "non-entity": [
+      2,
+      10,
+      12
+    ],
+    "article": [
+      1,
+      4
+    ]
+  },
+  "166": {
+    "adjective": [
+      2,
+      3,
+      10,
+      11
+    ],
+    "verb": [],
+    "entity": [
+      6,
+      7
+    ],
+    "other": [
+      5,
+      8,
+      9
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1
+    ]
+  },
+  "167": {
+    "adjective": [
+      4,
+      12
+    ],
+    "verb": [
+      6
+    ],
+    "entity": [
+      5,
+      8,
+      9
+    ],
+    "other": [
+      3,
+      10
+    ],
+    "non-entity": [
+      1,
+      7,
+      11,
+      13
+    ],
+    "article": [
+      11
+    ]
+  },
+  "168": {
+    "adjective": [
+      4,
+      5,
+      6,
+      10
+    ],
+    "verb": [],
+    "entity": [
+      7
+    ],
+    "other": [
+      2,
+      8
+    ],
+    "non-entity": [
+      1,
+      11
+    ],
+    "article": [
+      3,
+      9
+    ]
+  },
+  "169": {
+    "adjective": [
+      5,
+      8,
+      9,
+      12
+    ],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2,
+      10
+    ],
+    "other": [
+      3,
+      4,
+      7,
+      11,
+      14,
+      17
+    ],
+    "non-entity": [
+      13,
+      15,
+      16,
+      18
+    ],
+    "article": [
+      1
+    ]
+  },
+  "170": {
+    "adjective": [],
+    "verb": [],
+    "entity": [
+      14
+    ],
+    "other": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "non-entity": [
+      11,
+      2,
+      5,
+      8
+    ],
+    "article": [
+      1,
+      4,
+      7,
+      10,
+      13
+    ]
+  },
+  "171": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      5,
+      8,
+      9
+    ],
+    "non-entity": [
+      4,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13
+    ],
+    "article": [
+      1
+    ]
+  },
+  "172": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      4
+    ],
+    "entity": [
+      3
+    ],
+    "other": [
+      5,
+      7,
+      8
+    ],
+    "non-entity": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "article": [
+      1
+    ]
+  },
+  "173": {
+    "adjective": [
+      2,
+      9,
+      10
+    ],
+    "verb": [],
+    "entity": [
+      3
+    ],
+    "other": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "non-entity": [
+      6,
+      11
+    ],
+    "article": [
+      1
+    ]
+  },
+  "174": {
+    "adjective": [
+      5
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      4
+    ],
+    "other": [],
+    "non-entity": [
+      6
+    ],
+    "article": [
+      1
+    ]
+  },
+  "175": {
+    "adjective": [],
+    "verb": [
+      3
+    ],
+    "entity": [
+      1,
+      2,
+      5
+    ],
+    "other": [
+      4,
+      6,
+      8
+    ],
+    "non-entity": [
+      7,
+      9
+    ],
+    "article": []
+  },
+  "176": {
+    "adjective": [
+      2
+    ],
+    "verb": [
+      4
+    ],
+    "entity": [
+      3
+    ],
+    "other": [
+      5
+    ],
+    "non-entity": [
+      6,
+      7
+    ],
+    "article": [
+      1
+    ]
+  },
+  "177": {
+    "adjective": [],
+    "verb": [
+      5
+    ],
+    "entity": [
+      4
+    ],
+    "other": [
+      2,
+      8
+    ],
+    "non-entity": [
+      1,
+      7,
+      10
+    ],
+    "article": [
+      3,
+      6,
+      9
+    ]
+  },
+  "178": {
+    "adjective": [
+      2,
+      11,
+      12,
+      15,
+      16,
+      18,
+      23,
+      24,
+      29
+    ],
+    "verb": [
+      7
+    ],
+    "entity": [
+      6
+    ],
+    "other": [
+      4,
+      8,
+      9,
+      14,
+      17,
+      22,
+      27
+    ],
+    "non-entity": [
+      3,
+      5,
+      10,
+      13,
+      20,
+      21,
+      25,
+      26,
+      30
+    ],
+    "article": [
+      1
+    ]
+  },
+  "179": {
+    "adjective": [
+      8,
+      9
+    ],
+    "verb": [
+      3
+    ],
+    "entity": [
+      2,
+      10
+    ],
+    "other": [
+      4,
+      6,
+      11
+    ],
+    "non-entity": [
+      5,
+      12,
+      13
+    ],
+    "article": [
+      1,
+      7
+    ]
+  },
+  "180": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [
+      4,
+      5
+    ],
+    "article": [
+      1
+    ]
+  },
+  "181": {
+    "adjective": [],
+    "verb": [
+      5
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      6,
+      7
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1
+    ]
+  },
+  "182": {
+    "adjective": [],
+    "verb": [
+      7
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      8,
+      9
+    ],
+    "non-entity": [
+      4,
+      5,
+      6
+    ],
+    "article": [
+      1
+    ]
+  },
+  "183": {
+    "adjective": [],
+    "verb": [
+      5
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      6,
+      7
+    ],
+    "non-entity": [
+      4
+    ],
+    "article": [
+      1
+    ]
+  },
+  "184": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      7,
+      8
+    ],
+    "non-entity": [
+      4,
+      5
+    ],
+    "article": [
+      1
+    ]
+  },
+  "185": {
+    "adjective": [],
+    "verb": [
+      7
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      8,
+      9
+    ],
+    "non-entity": [
+      4,
+      5,
+      6
+    ],
+    "article": [
+      1
+    ]
+  },
+  "186": {
+    "adjective": [],
+    "verb": [
+      8
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3,
+      9,
+      10
+    ],
+    "non-entity": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "article": [
+      1
+    ]
+  },
+  "187": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5,
+      6
+    ],
+    "article": [
+      1
+    ]
+  },
+  "188": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1
+    ]
+  },
+  "189": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5,
+      6,
+      7
+    ],
+    "article": [
+      1
+    ]
+  },
+  "190": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5
+    ],
+    "article": [
+      1
+    ]
+  },
+  "191": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5,
+      6
+    ],
+    "article": [
+      1
+    ]
+  },
+  "192": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5,
+      6,
+      7
+    ],
+    "article": [
+      1
+    ]
+  },
+  "193": {
+    "adjective": [],
+    "verb": [
+      4
+    ],
+    "entity": [
+      2
+    ],
+    "other": [
+      3
+    ],
+    "non-entity": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "article": [
+      1
+    ]
+  },
+  "194": {
+    "adjective": [],
+    "verb": [
+      7
+    ],
+    "entity": [
+      3,
+      9
+    ],
+    "other": [
+      4,
+      8,
+      10,
+      11
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      6,
+      12
+    ],
+    "article": []
+  },
+  "195": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      3,
+      8
+    ],
+    "other": [
+      4,
+      7,
+      9,
+      10
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      11
+    ],
+    "article": []
+  },
+  "196": {
+    "adjective": [],
+    "verb": [
+      8
+    ],
+    "entity": [
+      3,
+      10
+    ],
+    "other": [
+      4,
+      9,
+      11,
+      12
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      13
+    ],
+    "article": []
+  },
+  "197": {
+    "adjective": [],
+    "verb": [
+      6
+    ],
+    "entity": [
+      3,
+      8
+    ],
+    "other": [
+      4,
+      7,
+      9,
+      10
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      11
+    ],
+    "article": []
+  },
+  "198": {
+    "adjective": [],
+    "verb": [
+      7
+    ],
+    "entity": [
+      3,
+      9
+    ],
+    "other": [
+      4,
+      8,
+      10,
+      11
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      6,
+      12
+    ],
+    "article": []
+  },
+  "199": {
+    "adjective": [],
+    "verb": [
+      8
+    ],
+    "entity": [
+      3,
+      10
+    ],
+    "other": [
+      4,
+      9,
+      11,
+      12
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      13
+    ],
+    "article": []
+  },
+  "200": {
+    "adjective": [],
+    "verb": [
+      9
+    ],
+    "entity": [
+      3,
+      11
+    ],
+    "other": [
+      4,
+      10,
+      12,
+      13
+    ],
+    "non-entity": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      14
+    ],
+    "article": []
+  }
+}

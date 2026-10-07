@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "prompt_id_format": "Original numeric prompt ID serialized as a JSON string; IDs are not renumbered.",
+  "core_token_index_basis": {
+    "base": 1,
+    "unit": "normalized whitespace-separated word",
+    "normalization": "Split on whitespace, lowercase each word, strip leading/trailing non-word characters, then omit empty words.",
+    "model_token_indices": "The runner maps these word positions to model tokenizer positions; these are not tokenizer IDs."
+  },
+  "datasets": {
+    "initno": {
+      "count": 276,
+      "id_range": [
+        1,
+        276
+      ],
+      "evaluation_range": [
+        101,
+        276
+      ],
+      "prompts_file": "initno.prompts.json",
+      "core_tokens_file": "initno.core_tokens.json",
+      "source": "attention-map-diffusers_flux_huanyuanDiT_new/prompt_datasets/initno.json",
+      "source_sha256": "3aa563286e6882eb6186cac61e08da4537d33f609af0eafdb7983e155fece9fb",
+      "matching_bundle": "attention-map-diffusers_flux_huanyuanDiT/prompt_datasets/initno.json",
+      "preserved_annotation_fields": [
+        "adjective",
+        "entity",
+        "other",
+        "verb"
+      ]
+    },
+    "drawbench": {
+      "count": 200,
+      "id_range": [
+        1,
+        200
+      ],
+      "evaluation_range": [
+        101,
+        200
+      ],
+      "prompts_file": "drawbench.prompts.json",
+      "core_tokens_file": "drawbench.core_tokens.json",
+      "source": "attention-map-diffusers_flux_huanyuanDiT_new/prompt_datasets/drawbench.json",
+      "source_sha256": "c14215424c59246853027d38ab542308855931a8a622ab942abdac8a0c889391",
+      "matching_bundle": "attention-map-diffusers_flux_huanyuanDiT/prompt_datasets/drawbench.json",
+      "preserved_annotation_fields": [
+        "adjective",
+        "article",
+        "entity",
+        "non-entity",
+        "other",
+        "verb"
+      ]
+    },
+    "pick": {
+      "count": 100,
+      "id_range": [
+        1,
+        100
+      ],
+      "evaluation_range": [
+        51,
+        100
+      ],
+      "prompts_file": "pick.prompts.json",
+      "core_tokens_file": "pick.core_tokens.json",
+      "source": "attention-map-diffusers_flux_huanyuanDiT_new/prompt_datasets/pick.json",
+      "source_sha256": "4af0955f875b14f45a4f89cfbe347622282f04d77eabbf58327261e25962c974",
+      "matching_bundle": "attention-map-diffusers_flux_huanyuanDiT/prompt_datasets/pick.json",
+      "preserved_annotation_fields": [
+        "adjective",
+        "article",
+        "entity",
+        "non-entity",
+        "other",
+        "verb"
+      ]
+    }
+  },
+  "model_prompt_overrides": {
+    "flux": {
+      "drawbench": {
+        "86": "A long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe"
+      }
+    }
+  },
+  "annotation_warnings": [
+    {
+      "dataset": "pick",
+      "prompt_id": "69",
+      "field": "article",
+      "out_of_range_positions": [
+        10
+      ],
+      "normalized_word_count": 7,
+      "used_by_entity_scoring": false,
+      "resolution": "Preserved unchanged from the original annotation dictionary."
+    },
+    {
+      "dataset": "pick",
+      "prompt_id": "73",
+      "field": "non-entity",
+      "out_of_range_positions": [
+        22,
+        23
+      ],
+      "normalized_word_count": 21,
+      "used_by_entity_scoring": false,
+      "resolution": "Preserved unchanged from the original annotation dictionary."
+    }
+  ],
+  "file_sha256": {
+    "initno.prompts.json": "85f7fa85bb90b053cee19e20f936a343ae5af74612fea26d2a89c6496ff1ec28",
+    "initno.core_tokens.json": "223eeb434e81829c165460108e0f3a18d1949831fe3814b002a5a8b1f40cfe75",
+    "drawbench.prompts.json": "3b58a62460c518fd66052f3baa8ae836cd546f721525b29ae64d722143526c16",
+    "drawbench.core_tokens.json": "0b8dd7aea62bbc9c868cef83cbc63da24f9b6da0de13f318a49e1a6a40dc12f2",
+    "pick.prompts.json": "4ce2f7d01686145119a25ce2cff0aa73f0cf614b29b5c6a07748bf5956499771",
+    "pick.core_tokens.json": "00c67f080d53b3a23a02538c7fa4d5a65a9c3bccffe7d05347d7f256a0af9fd7"
+  },
+  "model_prompt_override_sources": {
+    "flux": {
+      "drawbench": "attention-map-diffusers_flux/main_draw.py:prompts_dict"
+    }
+  }
+}
