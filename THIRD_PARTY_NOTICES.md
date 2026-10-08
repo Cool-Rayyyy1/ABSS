@@ -39,6 +39,10 @@ Model checkpoints are obtained separately and retain their own terms. The source
 
 Review the terms supplied with the checkpoint version you obtain. Other installed runtime packages also retain their own license notices.
 
+## Evaluation dependencies
+
+Evaluation uses [HPS v2](https://github.com/tgxs002/HPSv2) with its v2.1 checkpoint, [OpenAI CLIP](https://github.com/openai/CLIP), [ImageReward](https://github.com/THUDM/ImageReward), and [PickScore](https://github.com/yuvalkirstain/PickScore). Their implementations are installed as dependencies; evaluation checkpoints are supplied separately. These projects and checkpoints retain their own license terms.
+
 ## Prompt datasets and annotations
 
 The six prompt and annotation JSON files are extracted from the original experiment bundles. Their immediate source paths, exact fingerprints, preserved IDs, and known discrepancies are recorded in [datasets/metadata.json](datasets/metadata.json). The complete preserved collections contain 276 INITNO prompts, 200 DrawBench prompts, and 100 Pick prompts. See [datasets/README.md](datasets/README.md) for indexing and model-specific wording.

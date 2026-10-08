@@ -66,4 +66,23 @@ The manifests match each image to its prompt, seed, model, and method for later 
 
 For Slurm, use `sbatch scripts/run.slurm.sh --model flux --dataset initno`. Merge completed run manifests with `python scripts/collect.py --help`.
 
+## Evaluation
+
+Evaluate all three ABSS and random images per prompt with [HPS v2.1](https://github.com/tgxs002/HPSv2), CLIP ViT-L/14, [ImageReward](https://github.com/THUDM/ImageReward), and [PickScore](https://github.com/yuvalkirstain/PickScore). Use a separate Python 3.10 environment and provide the downloaded evaluation weights:
+
+```bash
+pip install -r evaluation/requirements.txt
+for metric in hps clip imagereward pickscore; do
+  python evaluation/score.py --manifest runs/benchmark/manifest.csv \
+    --metric "$metric" --weights-root /path/to/evaluation \
+    --output "runs/evaluation/metrics/$metric"
+done
+python evaluation/aggregate.py --manifest runs/benchmark/manifest.csv \
+  --scores runs/evaluation/metrics --output runs/evaluation/summary
+```
+
+`--weights-root` accepts the shared Hugging Face cache directory. Individual paths can be supplied with `--hps-checkpoint`, `--clip-model`, `--imagereward-checkpoint`, and `--pickscore-model`; see `python evaluation/score.py --help` for backbone, tokenizer, and config options. All weights load locally.
+
+The output includes per-image scores, per-prompt means, and `summary.csv` comparing ABSS with random. HPS and CLIP use raw similarities; PickScore uses its scaled similarity without softmax. For Slurm, use `sbatch evaluation/run.slurm.sh` with the same scoring arguments.
+
 Upstream credits and licenses: [Third-party notices](THIRD_PARTY_NOTICES.md).
