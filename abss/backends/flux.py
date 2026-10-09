@@ -1,7 +1,7 @@
 """Copyright 2024 Black Forest Labs and The HuggingFace Team.
 
 Derived from diffusers 0.31.0 (Apache-2.0) and attention-map-diffusers (MIT).
-Modified for ABSS resumable screening. See THIRD_PARTY_NOTICES.md.
+Modified for ABSS resumable screening. See LICENSE.
 """
 
 from __future__ import annotations

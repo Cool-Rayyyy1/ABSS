@@ -8,17 +8,13 @@ Our paper ***ABSS*** has been accepted by NeurIPS 2026. 🎉🌸🎉
 
 ![Good and bad seeds across text-to-image models](assets/motivation.jpg)
 
-## Overview
-
-ABSS is a training-free method that ranks seeds using early attention to prompt core tokens and continues generation for the top-k seeds. This repository supports **FLUX.1-dev** and **HunyuanDiT v1.2**.
-
 ## Abstract
 
 Text-to-image diffusion models can synthesize high-quality images, yet the outcome is notoriously sensitive to the random seed: different initial seeds often yield large variations in image quality and prompt–image alignment. We revisit this “seed effect” and show that attention dynamics over prompt core tokens, the content-bearing words, measured during the first few denoising steps, strongly predict final generation quality. Building on this observation, we introduce **Attention-Based Seed Selection (ABSS)**, a training-free, plug-and-play method that ranks seeds for a given prompt by leveraging cross-attention to core tokens during the denoising process. ABSS requires no finetuning and does not alter the initial noise; it scores and ranks all candidate seeds, keeps only the top-k for full generation, and discards the rest, without relying on a fixed accept/reject threshold. Operating purely at inference time, ABSS can serve as a lightweight pre-selection add-on for existing seed-optimization pipelines, enabling additional gains. Across three benchmarks, extensive experiments show that ABSS enables consistent improvements in text–image alignment and visual quality for Stable Diffusion variants, as corroborated by human preference and alignment metrics.
 
 ## Installation
 
-Before running, download the [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) and [HunyuanDiT v1.2](https://huggingface.co/Tencent-Hunyuan/HunyuanDiT-v1.2-Diffusers) weights. Use `--model-path` to select a local checkpoint.
+Download the [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) or [HunyuanDiT v1.2](https://huggingface.co/Tencent-Hunyuan/HunyuanDiT-v1.2-Diffusers) Diffusers checkpoint before running.
 
 ```bash
 git clone https://github.com/Cool-Rayyyy1/ABSS.git
@@ -32,27 +28,28 @@ pip install -r requirements.txt
 ## Usage👀️
 
 ```bash
-python run.py --model flux --dataset initno
-python run.py --model hunyuan --dataset initno
+python run.py --model flux --model-path /path/to/FLUX.1-dev
+python run.py --model hunyuan --model-path /path/to/HunyuanDiT-v1.2-Diffusers
 ```
 
-Both commands generate **3 ABSS images and 3 random images** per prompt. ABSS screens 10 candidate seeds for **10 denoising steps**, selects the top 3, and resumes their saved states for the remaining **40 steps**.
+Both commands use **INITNO prompts 101–276**, generating **3 ABSS images and 3 random images** per prompt. ABSS ranks 10 candidate seeds at denoising **index 10 (zero-based)**, after the **11th** model forward. The selected top 3 resume from their saved latents and scheduler states for the remaining **39 of 50 steps**.
 
 | Argument | Default |
 | --- | --- |
-| `--dataset` | `initno` (`drawbench` and `pick` also supported) |
+| `--dataset` | `initno` |
+| `--start-idx`, `--end-idx` | `101`, `276` |
 | `--seed-pool-size` | `10` |
 | `--top-k` | `3` |
-| `--screening-steps` | `10` |
+| `--screening-steps` | `10` (zero-based index) |
 | `--num-inference-steps` | `50` |
 | `--guidance-scale` | `7.5` |
 | `--base-seed` | `11` |
 
-Use `--start-idx 101 --end-idx 101` for a single prompt, or `--no-random-baseline` for ABSS only. Prompts and core-token annotations are in [datasets/](datasets/); override them with `--prompts` and `--core-tokens`. See `python run.py --help` for all options.
+Use `--start-idx 101 --end-idx 101` for one prompt or `--no-random-baseline` for ABSS only. Prompts and core-token annotations are in [datasets/](datasets/); supply your own with `--prompts` and `--core-tokens`.
 
 ### Output🎉️
 
-Each run saves images and scoring manifests under `runs/<model>/<dataset>/test_<base-seed>/`:
+Images and manifests are saved under `runs/<model>/initno/test_11/`:
 
 ```text
 abss/prompt_101/img_seed*.png
@@ -62,27 +59,51 @@ manifest.csv
 manifest.jsonl
 ```
 
-The manifests match each image to its prompt, seed, model, and method for later evaluation. Use `--output` for a new run directory. FLUX outputs 512×512 images; HunyuanDiT outputs 1024×1024 images by default.
-
-For Slurm, use `sbatch scripts/run.slurm.sh --model flux --dataset initno`. Merge completed run manifests with `python scripts/collect.py --help`.
+Use `--output` to choose another run directory. Default image sizes are 512×512 for FLUX and 1024×1024 for HunyuanDiT.
 
 ## Evaluation
 
-Evaluate all three ABSS and random images per prompt with [HPS v2.1](https://github.com/tgxs002/HPSv2), CLIP ViT-L/14, [ImageReward](https://github.com/THUDM/ImageReward), and [PickScore](https://github.com/yuvalkirstain/PickScore). Use a separate Python 3.10 environment and provide the downloaded evaluation weights:
+Install the evaluation dependencies in a separate environment:
 
 ```bash
+conda create -n abss-eval python=3.10 -y
+conda activate abss-eval
 pip install -r evaluation/requirements.txt
-for metric in hps clip imagereward pickscore; do
-  python evaluation/score.py --manifest runs/benchmark/manifest.csv \
-    --metric "$metric" --weights-root /path/to/evaluation \
-    --output "runs/evaluation/metrics/$metric"
-done
-python evaluation/aggregate.py --manifest runs/benchmark/manifest.csv \
-  --scores runs/evaluation/metrics --output runs/evaluation/summary
 ```
 
-`--weights-root` accepts the shared Hugging Face cache directory. Individual paths can be supplied with `--hps-checkpoint`, `--clip-model`, `--imagereward-checkpoint`, and `--pickscore-model`; see `python evaluation/score.py --help` for backbone, tokenizer, and config options. All weights load locally.
+Download the following files into a local directory such as `/path/to/evaluation`. Model directories should contain their Hugging Face config, weights, and tokenizer/processor files.
 
-The output includes per-image scores, per-prompt means, and `summary.csv` comparing ABSS with random. HPS and CLIP use raw similarities; PickScore uses its scaled similarity without softmax. For Slurm, use `sbatch evaluation/run.slurm.sh` with the same scoring arguments.
+| Local path | Download |
+| --- | --- |
+| `hps/HPS_v2.1_compressed.pt` | [HPS v2.1](https://huggingface.co/xswu/HPSv2) |
+| `clip/` | [CLIP ViT-L/14](https://huggingface.co/openai/clip-vit-large-patch14) |
+| `pickscore/` | [PickScore](https://huggingface.co/yuvalkirstain/PickScore_v1) |
+| `laion/` | [ViT-H/14](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K), including `open_clip_pytorch_model.bin` and processor files |
+| `imagereward/ImageReward.pt`, `imagereward/med_config.json` | [ImageReward](https://huggingface.co/THUDM/ImageReward) |
+| `bert/` | [BERT tokenizer](https://huggingface.co/google-bert/bert-base-uncased) |
 
-Upstream credits and licenses: [Third-party notices](THIRD_PARTY_NOTICES.md).
+Score all ABSS and random images from a completed run:
+
+```bash
+weights=/path/to/evaluation
+manifest=runs/flux/initno/test_11/manifest.csv
+out=runs/evaluation/flux
+for metric in hps clip imagereward pickscore; do
+  python evaluation/score.py --manifest "$manifest" --metric "$metric" \
+    --hps-checkpoint "$weights/hps/HPS_v2.1_compressed.pt" \
+    --hps-backbone "$weights/laion/open_clip_pytorch_model.bin" \
+    --clip-model "$weights/clip" \
+    --pickscore-model "$weights/pickscore" --pickscore-processor "$weights/laion" \
+    --imagereward-checkpoint "$weights/imagereward/ImageReward.pt" \
+    --imagereward-config "$weights/imagereward/med_config.json" \
+    --bert-tokenizer "$weights/bert" --output "$out/metrics/$metric"
+done
+python evaluation/aggregate.py --manifest "$manifest" \
+  --scores "$out/metrics" --output "$out/summary"
+```
+
+For HunyuanDiT, set `manifest=runs/hunyuan/initno/test_11/manifest.csv` and `out=runs/evaluation/hunyuan`. Results include per-image scores, per-prompt means, and `summary/summary.csv` comparing ABSS with random. All evaluation weights load locally.
+
+## Acknowledgements
+
+Built on [Attention Map Diffusers](https://github.com/wooyeolBaek/attention-map-diffusers), [Diffusers](https://github.com/huggingface/diffusers), [FLUX](https://github.com/black-forest-labs/flux), and [HunyuanDiT](https://github.com/Tencent-Hunyuan/HunyuanDiT), with prompts from [InitNO](https://github.com/xiefan-guo/initno). See [LICENSE](LICENSE).

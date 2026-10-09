@@ -3,14 +3,14 @@ import json
 from pathlib import Path
 
 from .config import RunConfig
-from .data import load_dataset
+from .data import DATASETS, load_dataset
 
 
 def parser():
     command = argparse.ArgumentParser(description="ABSS: attention-based seed screening with cached continuation")
     command.add_argument("--model", choices=("flux", "hunyuan"), required=True)
     command.add_argument("--model-path", default=None)
-    command.add_argument("--dataset", choices=("initno", "drawbench", "pick"), default="initno")
+    command.add_argument("--dataset", choices=DATASETS, default="initno")
     command.add_argument("--prompts", type=Path, default=None)
     command.add_argument("--core-tokens", type=Path, default=None)
     command.add_argument("--start-idx", type=int, default=None)
@@ -19,8 +19,8 @@ def parser():
     command.add_argument("--top-k", type=int, default=3)
     command.add_argument("--base-seed", type=int, default=11)
     screening = command.add_mutually_exclusive_group()
-    screening.add_argument("--screening-steps", type=int, default=None, help="Completed denoising steps before selection (default: 10)")
-    screening.add_argument("--probe-step", type=int, default=None, help="Zero-based screening index; overrides --screening-steps")
+    screening.add_argument("--screening-steps", type=int, default=None, help="Zero-based screening index (default: 10, the 11th forward); completed steps are index + 1")
+    screening.add_argument("--probe-step", type=int, default=None, help="Alias for --screening-steps: zero-based screening index")
     command.add_argument("--probe-blocks", default=None)
     command.add_argument("--num-inference-steps", type=int, default=50)
     command.add_argument("--guidance-scale", type=float, default=7.5)
@@ -42,7 +42,7 @@ def parser():
 def main(argv=None):
     command = parser()
     args = command.parse_args(argv)
-    probe_step = args.probe_step if args.probe_step is not None else (10 if args.screening_steps is None else args.screening_steps) - 1
+    probe_step = args.probe_step if args.probe_step is not None else (10 if args.screening_steps is None else args.screening_steps)
     try:
         config = RunConfig(
             model=args.model, model_path=args.model_path, device=args.device, dtype=args.dtype,
@@ -59,7 +59,7 @@ def main(argv=None):
     except (ValueError, KeyError, FileNotFoundError) as error:
         command.error(str(error))
     output = args.output or Path("runs") / args.model / args.dataset / f"test_{args.base_seed}"
-    print(json.dumps({"config": config.to_dict(), "dataset": description,
+    print(json.dumps({"config": config.to_dict(), "screening_schedule": config.screening_schedule(), "dataset": description,
                       "output": str(output), "random_baseline": args.random_baseline,
                       "save_checkpoints": args.save_checkpoints}, indent=2), flush=True)
     if args.dry_run:

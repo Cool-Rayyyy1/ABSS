@@ -25,7 +25,7 @@ class RunConfig:
     guidance_scale: float = 7.5
     height: int = 512
     width: int = 512
-    probe_step: int = 9
+    probe_step: int = 10
     probe_blocks: tuple[str, ...] | None = None
     max_sequence_length: int | None = None
     offload: str = "original"
@@ -61,3 +61,13 @@ class RunConfig:
 
     def to_dict(self):
         return asdict(self)
+
+    def screening_schedule(self):
+        return {
+            "probe_index": self.probe_step,
+            "index_base": 0,
+            "completed_steps": self.probe_step + 1,
+            "continuation_start_index": self.probe_step + 1,
+            "remaining_steps": self.num_inference_steps - self.probe_step - 1,
+            "total_steps": self.num_inference_steps,
+        }

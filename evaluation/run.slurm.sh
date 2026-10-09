@@ -1,10 +1,7 @@
 #!/bin/bash
-#SBATCH --account=pengyu-lab
-#SBATCH --partition=pengyu-gpu
-#SBATCH --qos=medium
 #SBATCH --time=72:00:00
 #SBATCH --job-name=abss-eval
-#SBATCH --gres=gpu:V100:1
+#SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=48G
 #SBATCH --output=abss_eval_%j.log

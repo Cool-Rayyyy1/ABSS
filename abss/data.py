@@ -6,6 +6,7 @@ from .tokens import split_prompt_words
 
 
 DATASET_DIR = Path(__file__).resolve().parents[1] / "datasets"
+DATASETS = ("initno",)
 
 
 def read_json(path):
@@ -17,6 +18,8 @@ def sha256(path):
 
 
 def load_dataset(name, model, prompts_path=None, core_tokens_path=None, start_idx=None, end_idx=None):
+    if name not in DATASETS:
+        raise ValueError(f"Unknown built-in dataset: {name}. Available datasets: {', '.join(DATASETS)}")
     if prompts_path is not None and core_tokens_path is None:
         raise ValueError("Custom --prompts requires matching --core-tokens")
     metadata_path = DATASET_DIR / "metadata.json"
@@ -29,6 +32,8 @@ def load_dataset(name, model, prompts_path=None, core_tokens_path=None, start_id
     annotations = read_json(core_tokens_path)
     if not isinstance(prompts, dict) or not isinstance(annotations, dict):
         raise ValueError("Dataset JSON files must be objects keyed by prompt ID")
+    if not prompts or not annotations:
+        raise ValueError("Dataset JSON files must not be empty")
     overrides = metadata.get("model_prompt_overrides", {}).get(model, {}).get(name, {}) if default_prompts else {}
     prompts = {**prompts, **overrides}
     defaults = specification["evaluation_range"] if default_prompts else [min(map(int, prompts)), max(map(int, prompts))]

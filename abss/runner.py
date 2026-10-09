@@ -88,6 +88,7 @@ def run(config, dataset, description, output, random_baseline=True, save_checkpo
     source_root = Path(__file__).resolve().parent
     configuration = {
         "config": config.to_dict(),
+        "screening_schedule": config.screening_schedule(),
         "dataset": description,
         "random_baseline": random_baseline,
         "save_checkpoints": save_checkpoints,

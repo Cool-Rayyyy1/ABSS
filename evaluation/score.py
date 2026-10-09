@@ -14,6 +14,16 @@ METRICS = ("hps", "clip", "imagereward", "pickscore")
 FIELDS = ("dataset", "prompt_id", "prompt", "model", "method", "rank", "seed", "image_path", "base_seed")
 WEIGHTS = ("hps_checkpoint", "hps_backbone", "clip_model", "pickscore_model", "pickscore_processor",
            "imagereward_checkpoint", "imagereward_config", "bert_tokenizer")
+WEIGHT_HELP = {
+    "hps_checkpoint": "Local HPS_v2.1_compressed.pt or HPS_v2.1.pt file, or its directory",
+    "hps_backbone": "Local LAION ViT-H-14 open_clip_pytorch_model.bin file, or its directory",
+    "clip_model": "Local openai/clip-vit-large-patch14 model and processor directory",
+    "pickscore_model": "Local yuvalkirstain/PickScore_v1 model directory",
+    "pickscore_processor": "Local laion/CLIP-ViT-H-14-laion2B-s32B-b79K processor directory",
+    "imagereward_checkpoint": "Local ImageReward.pt file, or its directory",
+    "imagereward_config": "Local med_config.json file, or its directory",
+    "bert_tokenizer": "Local bert-base-uncased tokenizer directory",
+}
 
 
 def write_json(path, value):
@@ -170,13 +180,22 @@ def score_manifest(args, scorer_factory=None):
 
 
 def parser():
-    command = argparse.ArgumentParser(description="Score all three ABSS and random images for each prompt")
-    command.add_argument("--manifest", type=Path, required=True)
-    command.add_argument("--output", type=Path, required=True)
+    command = argparse.ArgumentParser(
+        description="Score all three ABSS and random images for each prompt using local weights only",
+        epilog="Model directories may be local Hugging Face exports, cache repository directories, or explicit "
+               "snapshot directories. Explicit weight arguments override --weights-root for that component.",
+    )
+    command.add_argument("--manifest", type=Path, required=True, help="Generation manifest.csv; image paths are relative to it")
+    command.add_argument("--output", type=Path, required=True, help="New or empty directory for this metric's scores and metadata")
     command.add_argument("--metric", choices=METRICS, required=True)
-    command.add_argument("--weights-root", type=Path)
+    command.add_argument(
+        "--weights-root", type=Path,
+        help="Shared directory containing models--xswu--HPSv2, models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K, "
+             "models--openai--clip-vit-large-patch14, models--yuvalkirstain--PickScore_v1, "
+             "ImageReward (ImageReward.pt and med_config.json), and models--bert-base-uncased",
+    )
     for name in WEIGHTS:
-        command.add_argument("--" + name.replace("_", "-"), type=Path)
+        command.add_argument("--" + name.replace("_", "-"), type=Path, help=WEIGHT_HELP[name])
     command.add_argument("--model", choices=("flux", "hunyuan"))
     command.add_argument("--dataset")
     command.add_argument("--device", default="cuda")

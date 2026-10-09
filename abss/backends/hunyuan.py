@@ -1,7 +1,7 @@
 """Copyright 2024 HunyuanDiT Authors and The HuggingFace Team.
 
 Derived from diffusers 0.31.0 (Apache-2.0) and attention-map-diffusers (MIT),
-modified for resumable ABSS screening. See THIRD_PARTY_NOTICES.md.
+modified for resumable ABSS screening. See LICENSE.
 """
 
 from __future__ import annotations
